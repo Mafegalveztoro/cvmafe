@@ -1,5 +1,12 @@
+//=====IMPORTACION DE LIBRERIAS======
+import React from 'react';
+
+//=====IMPORTACION DE IMAGENES======
 import logo from './logo.svg';
+
+//=====IMPORTACIOIN DE ESTILOS======
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
