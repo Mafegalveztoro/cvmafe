@@ -2,8 +2,13 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
+//=====IMPORTACION DE IMAGENES======
+// usar imagenes que se encuentran en el componente footer
+import perrito from './images/perrito.jpeg';
+import gatito from './images/gatito.jpeg';
+
 //se genera nuestro componente funcional
-function Footer(){
+function Footer({animal}){
     return (
         <div>
             <h1>Hola soy el Footer</h1>
@@ -17,7 +22,7 @@ function Footer(){
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
+                            <h3>{props.nameOne}</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -29,19 +34,19 @@ function Footer(){
                         />
 
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
+                            <h3>{props.nameTwo}</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                            src={gatito}
                             alt="Third slide"
                         />
 
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
+                        <   h3>{props.nameThree}</h3>
                             <p>
                             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                             </p>
@@ -51,6 +56,7 @@ function Footer(){
         </div>
   );
 };
-
+                };
+            };            
 
 export default Footer;
