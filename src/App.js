@@ -1,5 +1,6 @@
 //=====IMPORTACION DE LIBRERIAS======
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 //=====IMPORTACION DE IMAGENES======
 import logo from './logo.svg';
@@ -16,6 +17,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Router>
+          <Link to="/">Inicio</Link>
+          <Link to="/">Usuarios</Link>
+          <Link to="/">Footer</Link>
+          <Link to="/">Header</Link>
+        </Router>
         <img src={logo} className="App-logo" alt="logo" />
         <Headermafe></Headermafe>
         <p>
